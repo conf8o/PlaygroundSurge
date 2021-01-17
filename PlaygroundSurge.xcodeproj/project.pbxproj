@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DEA9C1725B466F600D12975 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA9C1625B466F600D12975 /* main.swift */; };
+		7DEA9C2125B4688400D12975 /* Surge in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEA9C2025B4688400D12975 /* Surge */; };
+		7DEA9C2525B468AC00D12975 /* QuartzRenderer in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEA9C2425B468AC00D12975 /* QuartzRenderer */; };
+		7DEA9C2725B468AC00D12975 /* SVGRenderer in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEA9C2625B468AC00D12975 /* SVGRenderer */; };
+		7DEA9C2925B468AC00D12975 /* SwiftPlot in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEA9C2825B468AC00D12975 /* SwiftPlot */; };
+		7DEA9C2B25B468AC00D12975 /* AGGRenderer in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEA9C2A25B468AC00D12975 /* AGGRenderer */; };
+		7DEA9C2F25B47CFC00D12975 /* sinwave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA9C2E25B47CFC00D12975 /* sinwave.swift */; };
+		7DEA9C3225B482DE00D12975 /* plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA9C3125B482DE00D12975 /* plot.swift */; };
+		7DEA9C3625B487BD00D12975 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA9C3525B487BD00D12975 /* config.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7DEA9C1125B466F600D12975 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7DEA9C1325B466F600D12975 /* PlaygroundSurge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PlaygroundSurge; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEA9C1625B466F600D12975 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7DEA9C2E25B47CFC00D12975 /* sinwave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sinwave.swift; sourceTree = "<group>"; };
+		7DEA9C3125B482DE00D12975 /* plot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plot.swift; sourceTree = "<group>"; };
+		7DEA9C3525B487BD00D12975 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DEA9C1025B466F600D12975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEA9C2525B468AC00D12975 /* QuartzRenderer in Frameworks */,
+				7DEA9C2B25B468AC00D12975 /* AGGRenderer in Frameworks */,
+				7DEA9C2925B468AC00D12975 /* SwiftPlot in Frameworks */,
+				7DEA9C2125B4688400D12975 /* Surge in Frameworks */,
+				7DEA9C2725B468AC00D12975 /* SVGRenderer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DEA9C0A25B466F600D12975 = {
+			isa = PBXGroup;
+			children = (
+				7DEA9C1525B466F600D12975 /* PlaygroundSurge */,
+				7DEA9C1425B466F600D12975 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DEA9C1425B466F600D12975 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA9C1325B466F600D12975 /* PlaygroundSurge */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DEA9C1525B466F600D12975 /* PlaygroundSurge */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA9C1625B466F600D12975 /* main.swift */,
+				7DEA9C2E25B47CFC00D12975 /* sinwave.swift */,
+				7DEA9C3125B482DE00D12975 /* plot.swift */,
+				7DEA9C3525B487BD00D12975 /* config.swift */,
+			);
+			path = PlaygroundSurge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DEA9C1225B466F600D12975 /* PlaygroundSurge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEA9C1A25B466F600D12975 /* Build configuration list for PBXNativeTarget "PlaygroundSurge" */;
+			buildPhases = (
+				7DEA9C0F25B466F600D12975 /* Sources */,
+				7DEA9C1025B466F600D12975 /* Frameworks */,
+				7DEA9C1125B466F600D12975 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaygroundSurge;
+			packageProductDependencies = (
+				7DEA9C2025B4688400D12975 /* Surge */,
+				7DEA9C2425B468AC00D12975 /* QuartzRenderer */,
+				7DEA9C2625B468AC00D12975 /* SVGRenderer */,
+				7DEA9C2825B468AC00D12975 /* SwiftPlot */,
+				7DEA9C2A25B468AC00D12975 /* AGGRenderer */,
+			);
+			productName = PlaygroundSurge;
+			productReference = 7DEA9C1325B466F600D12975 /* PlaygroundSurge */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DEA9C0B25B466F600D12975 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					7DEA9C1225B466F600D12975 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 7DEA9C0E25B466F600D12975 /* Build configuration list for PBXProject "PlaygroundSurge" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DEA9C0A25B466F600D12975;
+			packageReferences = (
+				7DEA9C1F25B4688400D12975 /* XCRemoteSwiftPackageReference "Surge" */,
+				7DEA9C2325B468AC00D12975 /* XCRemoteSwiftPackageReference "swiftplot" */,
+			);
+			productRefGroup = 7DEA9C1425B466F600D12975 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DEA9C1225B466F600D12975 /* PlaygroundSurge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DEA9C0F25B466F600D12975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEA9C1725B466F600D12975 /* main.swift in Sources */,
+				7DEA9C3625B487BD00D12975 /* config.swift in Sources */,
+				7DEA9C3225B482DE00D12975 /* plot.swift in Sources */,
+				7DEA9C2F25B47CFC00D12975 /* sinwave.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7DEA9C1825B466F600D12975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DEA9C1925B466F600D12975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7DEA9C1B25B466F600D12975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BD4BPYC3ZY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7DEA9C1C25B466F600D12975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BD4BPYC3ZY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DEA9C0E25B466F600D12975 /* Build configuration list for PBXProject "PlaygroundSurge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEA9C1825B466F600D12975 /* Debug */,
+				7DEA9C1925B466F600D12975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DEA9C1A25B466F600D12975 /* Build configuration list for PBXNativeTarget "PlaygroundSurge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEA9C1B25B466F600D12975 /* Debug */,
+				7DEA9C1C25B466F600D12975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7DEA9C1F25B4688400D12975 /* XCRemoteSwiftPackageReference "Surge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jounce/Surge.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+		7DEA9C2325B468AC00D12975 /* XCRemoteSwiftPackageReference "swiftplot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KarthikRIyer/swiftplot.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7DEA9C2025B4688400D12975 /* Surge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEA9C1F25B4688400D12975 /* XCRemoteSwiftPackageReference "Surge" */;
+			productName = Surge;
+		};
+		7DEA9C2425B468AC00D12975 /* QuartzRenderer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEA9C2325B468AC00D12975 /* XCRemoteSwiftPackageReference "swiftplot" */;
+			productName = QuartzRenderer;
+		};
+		7DEA9C2625B468AC00D12975 /* SVGRenderer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEA9C2325B468AC00D12975 /* XCRemoteSwiftPackageReference "swiftplot" */;
+			productName = SVGRenderer;
+		};
+		7DEA9C2825B468AC00D12975 /* SwiftPlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEA9C2325B468AC00D12975 /* XCRemoteSwiftPackageReference "swiftplot" */;
+			productName = SwiftPlot;
+		};
+		7DEA9C2A25B468AC00D12975 /* AGGRenderer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEA9C2325B468AC00D12975 /* XCRemoteSwiftPackageReference "swiftplot" */;
+			productName = AGGRenderer;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7DEA9C0B25B466F600D12975 /* Project object */;
+}

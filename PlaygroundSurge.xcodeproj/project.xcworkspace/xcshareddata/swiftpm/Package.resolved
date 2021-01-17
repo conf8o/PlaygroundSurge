@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Surge",
+        "repositoryURL": "https://github.com/Jounce/Surge.git",
+        "state": {
+          "branch": null,
+          "revision": "6e4a47e63da8801afe6188cf039e9f04eb577721",
+          "version": "2.3.2"
+        }
+      },
+      {
+        "package": "SwiftPlot",
+        "repositoryURL": "https://github.com/KarthikRIyer/swiftplot.git",
+        "state": {
+          "branch": null,
+          "revision": "c5424eb8688217029d44e941d3a1d2ccc18c3a82",
+          "version": "2.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
