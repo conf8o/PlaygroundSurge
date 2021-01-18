@@ -13,7 +13,8 @@ func plotSinWave() throws {
     let k: Float = 2
     let w = k * 2 * Float.pi
     
-    let wave = sin(xs * w)
+    var wave = xs * w
+    sinInPlace(&wave)
     
-    try plot(xs, wave, fileName: "sinwave")
+    try plot.plotLine(xs, wave, fileName: "sinwave")
 }

@@ -2,18 +2,30 @@ import Foundation
 import AGGRenderer
 import SwiftPlot
 
-var output_path = config["output_path"]!
+struct Plot<R: Renderer> {
+    var outputPath: String
+    let renderer: R
+    var plotCount: Int = 0
 
-func setOutputPath(path: String) {
-    output_path = path
+    var plotHistory: String { 
+        let title = "Plot" + String(plotCount)
+        plotCount += 1
+        return title    
+    }
+
+    func plotLine(_ xs: [Float], _ ys: [Float], fileName: String? = nil) throws {
+        var outputFileName = fileName ?? plotHistory
+
+        var lineGraph = LineGraph<Float,Float>(enablePrimaryAxisGrid: true)
+        lineGraph.addSeries(xs, ys, label: outputFileName, color: .lightBlue)
+
+        try lineGraph.drawGraphAndOutput(fileName: outputPath + outputFileName, renderer: renderer)
+    }
 }
 
-func plot(_ xs: [Float], _ ys: [Float], fileName: String) throws {
-    let agg_renderer: AGGRenderer = AGGRenderer()
-    var lineGraph = LineGraph<Float,Float>(enablePrimaryAxisGrid: true)
-    lineGraph.addSeries(xs, ys, label: "Plot 1", color: .lightBlue)
-    lineGraph.plotLabel.xLabel = "X-AXIS"
-    lineGraph.plotLabel.yLabel = "Y-AXIS"
-    lineGraph.plotLineThickness = 3.0
-    try lineGraph.drawGraphAndOutput(fileName: output_path + fileName, renderer: agg_renderer)
-}
+var plot = Plot<AGGRenderer>(
+    outputPath: CONFIG["output_path"]!, 
+    renderer: AGGRenderer()
+)
+
+
