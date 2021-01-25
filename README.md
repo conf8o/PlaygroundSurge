@@ -1,4 +1,4 @@
-# PlaygoundSurge
+# PlaygroundSurge
 Swift の Accelerate フレームワークを良い感じにラップしたライブラリ Surge を試す。
 
 できることできないことをメモっておく。
